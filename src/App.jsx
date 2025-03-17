@@ -18,7 +18,7 @@ useEffect(() => {
 })
 
 async function reviewCode(){
-  const response = await axios.post('http://apicode.garvishmarketing.com/ai/get-review', {code})
+  const response = await axios.post('https://codereviewbackend-rk73.onrender.com/ai/get-review', {code})
   
   setreview(response.data)
 
